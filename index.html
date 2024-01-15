@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Reset</title>
+  <link rel="stylesheet" href="./index.css" /> 
+</head>
+<body>
+
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+  </div>
+
+  <form class="password-form" id="formData">
+    <!-- <h1 class="heading">Urth by Trst</h1> -->
+    <label for="new_password">New Password</label>
+    <input type="password" id="new_password" name="password" required>
+
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" id="confirm_password" name="confirmPassword" required>
+    <span id="passwordMatchMessage"></span>
+
+    <button type="button" onclick="postData()">Submit</button>
+  </form>
+  
+  <script type="text/javascript" src="./index.js"></script> 
+</body>
+</html>
